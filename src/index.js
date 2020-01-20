@@ -15,7 +15,7 @@ class App extends React.Component{
         const socket = socketIOClient(this.state.endpoint);
         socket.on('data', (value) => {
             this.setState({data: value})
-            ReactDOM.render(<div className="App">{this.state.data}</div>, document.getElementById('root'));
+            ReactDOM.render(<div className="App">{value}</div>, document.getElementById('root'));
         })
         return (
             <div className="App">
