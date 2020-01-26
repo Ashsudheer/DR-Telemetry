@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import socketIOClient from "socket.io-client";
 import './App.css';
 import logo from '../img/DR-White.png';
-import { Card } from 'react-bootstrap';
+// import { Card } from 'react-bootstrap';
+import Cards from './Cards';
+import { CardDeck } from 'react-bootstrap';
 
 class App extends React.Component{
     constructor() {
@@ -23,14 +25,21 @@ class App extends React.Component{
                     <div className="container-fluid image">
                         <img className="logo" src={logo} alt=""/>
                     </div>
-                    <Card className="card">
+                    {/* <Card className="card">
                         <Card.Body className="card-body">
                             <Card.Title className="card-text">Data</Card.Title>
                             <Card.Text className="card-text">
                                 {value}
                             </Card.Text>
                         </Card.Body>
-                    </Card>
+                    </Card> */}
+                    <CardDeck>
+                        <Cards data={value}></Cards>
+                        <Cards data={value}></Cards>
+                        <Cards data={value}></Cards>
+                        <Cards data={value}></Cards>
+                        <Cards data={value}></Cards>
+                    </CardDeck>
                 </div>
             );
 
@@ -41,14 +50,21 @@ class App extends React.Component{
                 <div className="container-fluid image">
                     <img className="logo" src={logo} alt=""/>
                 </div>
-                <Card className="card">
+                {/* <Card className="card">
                     <Card.Body className="card-body">
                         <Card.Title className="card-text">Data</Card.Title>
                         <Card.Text className="card-text">
 
                         </Card.Text>
                     </Card.Body>
-                </Card>
+                </Card> */}
+                <CardDeck>
+                    <Cards data={-1}></Cards>
+                    <Cards data={-1}></Cards>
+                    <Cards data={-1}></Cards>
+                    <Cards data={-1}></Cards>
+                    <Cards data={-1}></Cards>
+                </CardDeck>
             </div>
         );
     }
