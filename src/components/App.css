@@ -22,7 +22,6 @@ html, body {
 }
 
 .card{
-    opacity:.2;
     margin:30px auto;
     padding:15px;
     width:10%;
@@ -30,5 +29,8 @@ html, body {
     border-style:solid;
     border-color: rgb(4, 70, 87);
     text-align: center;
-    color:white;
+}
+
+.card-text{
+    color: black;
 }
