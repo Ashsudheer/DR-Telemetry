@@ -5,7 +5,7 @@ import './App.css';
 import logo from '../img/DR-White.png';
 // import { Card } from 'react-bootstrap';
 import Cards from './Cards';
-import { CardDeck } from 'react-bootstrap';
+import { Container, Row, Col, CardDeck } from 'react-bootstrap';
 
 class App extends React.Component{
     constructor() {
@@ -22,24 +22,28 @@ class App extends React.Component{
             this.setState({data: value})
             const element = (
                 <div className="container-fluid App">
-                    <div className="container-fluid image">
+                    <Container className="image">
                         <img className="logo" src={logo} alt=""/>
-                    </div>
-                    {/* <Card className="card">
-                        <Card.Body className="card-body">
-                            <Card.Title className="card-text">Data</Card.Title>
-                            <Card.Text className="card-text">
-                                {value}
-                            </Card.Text>
-                        </Card.Body>
-                    </Card> */}
-                    <CardDeck>
-                        <Cards data={value}></Cards>
-                        <Cards data={value}></Cards>
-                        <Cards data={value}></Cards>
-                        <Cards data={value}></Cards>
-                        <Cards data={value}></Cards>
-                    </CardDeck>
+                    </Container>
+                    <Container className="card-grid">
+                        <Row className="card-row">
+                            <Col xs={6} md={4}>
+                                <Cards data={value}></Cards>
+                            </Col>
+                            <Col xs={6} md={4}>
+                                <Cards data={value}></Cards>
+                            </Col>
+                            <Col xs={6} md={4}>
+                                <Cards data={value}></Cards>
+                            </Col>
+                            <Col xs={6} md={4}>
+                                <Cards data={value}></Cards>
+                            </Col>
+                            <Col xs={6} md={4}>
+                                <Cards data={value}></Cards>
+                            </Col>
+                        </Row>
+                    </Container>
                 </div>
             );
 
@@ -47,24 +51,28 @@ class App extends React.Component{
         })
         return (
             <div className="container-fluid App">
-                <div className="container-fluid image">
+                <Container className="image">
                     <img className="logo" src={logo} alt=""/>
-                </div>
-                {/* <Card className="card">
-                    <Card.Body className="card-body">
-                        <Card.Title className="card-text">Data</Card.Title>
-                        <Card.Text className="card-text">
-
-                        </Card.Text>
-                    </Card.Body>
-                </Card> */}
-                <CardDeck>
-                    <Cards data={-1}></Cards>
-                    <Cards data={-1}></Cards>
-                    <Cards data={-1}></Cards>
-                    <Cards data={-1}></Cards>
-                    <Cards data={-1}></Cards>
-                </CardDeck>
+                </Container>
+                <Container className="card-grid">
+                    <Row className="card-row">
+                        <Col xs={6} md={4}>
+                            <Cards data={-1}></Cards>
+                        </Col>
+                        <Col xs={6} md={4}>
+                            <Cards data={-1}></Cards>
+                        </Col>
+                        <Col xs={6} md={4}>
+                            <Cards data={-1}></Cards>
+                        </Col>
+                        <Col xs={6} md={4}>
+                            <Cards data={-1}></Cards>
+                        </Col>
+                        <Col xs={6} md={4}>
+                            <Cards data={-1}></Cards>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         );
     }
