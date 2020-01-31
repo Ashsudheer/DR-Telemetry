@@ -28,19 +28,19 @@ class App extends React.Component{
                     <Container className="card-grid">
                         <Row className="card-row">
                             <Col xs={6} md={4}>
-                                <Cards data={value}></Cards>
+                                <Cards sensor_name={''} data={value}></Cards>
                             </Col>
                             <Col xs={6} md={4}>
-                                <Cards data={value}></Cards>
+                                <Cards sensor_name={''} data={value}></Cards>
                             </Col>
                             <Col xs={6} md={4}>
-                                <Cards data={value}></Cards>
+                                <Cards sensor_name={''} data={value}></Cards>
                             </Col>
                             <Col xs={6} md={4}>
-                                <Cards data={value}></Cards>
+                                <Cards sensor_name={''} data={value}></Cards>
                             </Col>
                             <Col xs={6} md={4}>
-                                <Cards data={value}></Cards>
+                                <Cards sensor_name={''} data={value}></Cards>
                             </Col>
                         </Row>
                     </Container>
@@ -57,19 +57,19 @@ class App extends React.Component{
                 <Container className="card-grid">
                     <Row className="card-row">
                         <Col xs={6} md={4}>
-                            <Cards data={-1}></Cards>
+                            <Cards sensor_name={''} data={-1}></Cards>
                         </Col>
                         <Col xs={6} md={4}>
-                            <Cards data={-1}></Cards>
+                            <Cards sensor_name={''} data={-1}></Cards>
                         </Col>
                         <Col xs={6} md={4}>
-                            <Cards data={-1}></Cards>
+                            <Cards sensor_name={''} data={-1}></Cards>
                         </Col>
                         <Col xs={6} md={4}>
-                            <Cards data={-1}></Cards>
+                            <Cards sensor_name={''} data={-1}></Cards>
                         </Col>
                         <Col xs={6} md={4}>
-                            <Cards data={-1}></Cards>
+                            <Cards sensor_name={''} data={-1}></Cards>
                         </Col>
                     </Row>
                 </Container>

@@ -8,7 +8,7 @@ class Cards extends React.Component{
         return (
             <Card className="card">
                 <Card.Body className="card-body">
-                    <Card.Title className="card-text">Data</Card.Title>
+                    <Card.Title className="card-text">{this.props.sensor_name}</Card.Title>
                     <Card.Text className="card-text">
                         {this.props.data}
                     </Card.Text>
